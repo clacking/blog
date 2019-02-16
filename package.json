@@ -7,15 +7,14 @@
   "dependencies": {
     "@emotion/core": "^10.0.7",
     "@emotion/styled": "^10.0.7",
-    "@mdx-js/mdx": "^0.16.8",
     "@mdx-js/tag": "^0.16.8",
     "gatsby": "^2.0.117",
     "gatsby-image": "^2.0.29",
     "gatsby-mdx": "^0.3.5",
     "gatsby-plugin-emotion": "^4.0.3",
     "gatsby-plugin-feed": "^2.0.13",
-    "gatsby-plugin-google-analytics": "^2.0.13",
     "gatsby-plugin-manifest": "^2.0.17",
+    "gatsby-plugin-mdx-prismjs": "^1.0.4",
     "gatsby-plugin-offline": "^2.0.23",
     "gatsby-plugin-react-helmet": "^3.0.6",
     "gatsby-plugin-sharp": "^2.0.20",
@@ -32,6 +31,7 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-helmet": "^5.2.0",
+    "react-syntax-highlighter": "^10.1.2",
     "react-typography": "^0.16.18",
     "typeface-merriweather": "0.0.54",
     "typeface-montserrat": "0.0.54",
@@ -54,5 +54,10 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "devDependencies": {
+    "@mdx-js/loader": "^0.17.5",
+    "@mdx-js/mdx": "^0.16.8",
+    "loader-utils": "^1.2.3"
   }
 }

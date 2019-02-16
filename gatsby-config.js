@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `clacking.net`,
-    author: `Toya Kinoshita`,
+    author: `@comfykb`,
     description: `blog`,
     siteUrl: `https://clacking.net/`,
     social: {
@@ -124,14 +124,18 @@ module.exports = {
       resolve: `gatsby-mdx`,
       options: {
         gatsbyRemarkPlugins: [
-        {
-          resolve: "gatsby-remark-images",
-          options: {
-            maxWidth: 1035,
-            sizeByPixelDensity: true
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 1035,
+              sizeByPixelDensity: true
+            }
           }
-        }
-        ]
+        ],
+        plugins: [{
+          resolve: `gatsby-plugin-mdx-prismjs`,
+          noInlineHighlight: false
+        }]
       }  
     },
   ],

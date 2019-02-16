@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import MDXRenderer from "gatsby-mdx/mdx-renderer"
-import { css } from '@emotion/core'
+import { Global, css } from '@emotion/core'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,10 +15,21 @@ class BlogPostTemplate extends React.Component {
     const titleStyle = css`
         text-align: center;
     `
+    const preHighlight = css`
+        pre {
+            background: #004D40;
+            padding: 4px 16px;
+            width: 100%;
+        }
+        img.gatsby-resp-image-image {
+            box-shadow: 5px 5px 10px #000000aa!important;
+        }
+    `
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
+        <Global styles={preHighlight} />
         <div css={titleStyle}>
             <h1>{post.frontmatter.title}</h1>
             <p
