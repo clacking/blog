@@ -132,10 +132,10 @@ module.exports = {
             }
           }
         ],
-        plugins: [{
+        /*plugins: [{
           resolve: `gatsby-plugin-mdx-prismjs`,
           noInlineHighlight: false
-        }]
+        }]*/
       }  
     },
   ],
