@@ -9,6 +9,8 @@ attachments:
  - "./unbox.webm"
 ---
 
+import { withPrefix } from 'gatsby'
+
 最近Steamのセールにて少し古いですが [Borderlands: The Pre-Sequel](https://store.steampowered.com/app/261640/Borderlands_The_PreSequel/) と言うゲームを購入しました。
 
 RPG系のシューターで、ハックアンドスラッシュと呼ばれる要素がありアイテムを集めるのが重要です。
@@ -67,11 +69,11 @@ if __name__ == '__main__':
 		input('Press Enter to continue')
 ```
 
-<video src='/static/autopy-085487db69dfb014e421436f82cc4597.webm' style="width: 100%" controls autoplay loop />
+<video src={withPrefix('webm/autopy.webm')} style="width: 100%" controls autoplay loop />
 
 フォーム一つを入力すると自動で次のフォームへ移動する為、マウス移動は一度で済みます。
 
-<video src='/static/unbox-2a29b8ff78f7992d68af36d4db5a7427.webm' style="width: 100%" controls autoplay loop />
+<video src={withPrefix('webm/unbox.webm')} style="width: 100%" controls autoplay loop />
 
 ガチャガチャを開ける様子
 
