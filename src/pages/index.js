@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { css } from '@emotion/core'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,6 +11,15 @@ class BlogIndex extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMdx.edges
+    const cat = css`
+      padding: 2px;
+      background: #d8d8d8;
+      border-radius: 8px;
+      border: 3px solid #737373;
+      margin-right: 8px;
+      transform: translateX(-100%);
+      font-weight: 400;
+    `
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -19,6 +29,7 @@ class BlogIndex extends React.Component {
         />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
+          const category = node.frontmatter.cat? ( <span alt="Category" css={cat}>{node.frontmatter.cat}</span> ) : null
           return (
             <div key={node.fields.slug}>
               <h3
@@ -26,12 +37,13 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
+                { category }
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <p><small dangerouslySetInnerHTML={{ __html: node.excerpt }} /></p>
             </div>
           )
         })}
@@ -59,6 +71,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "YYYY/MM/DD")
             title
+            cat
           }
         }
       }

@@ -21,6 +21,9 @@ export default function AboutMe() {
                 <p>Current: University student.</p>
                 <p>I'm interested in programming especially software and Web.</p>
                 <p>And I like geeky/nerdly techs 😜.</p>
+                <h3>Programming</h3>
+                <p>Usually use JavaScript for any Web and NodeJS.</p>
+                <p>Some C++. Also I'm interested in some languages so I use/learn other languages too.</p>
                 <h3>Hobbies</h3>
                 <p>Car, Motorsports, Mechanical Keyboards and some tech things.</p>
                 <h3>Links/Contacts</h3>

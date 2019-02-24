@@ -32,7 +32,7 @@ class BlogPostTemplate extends React.Component {
         <Global styles={preHighlight} />
         <div css={titleStyle}>
             <h1>{post.frontmatter.title}</h1>
-            <p
+            <span
               style={{
                 ...scale(-1 / 5),
                 display: `block`,
@@ -40,8 +40,14 @@ class BlogPostTemplate extends React.Component {
                 marginTop: rhythm(-1),
               }}
             >
-              {post.frontmatter.date}
-            </p>
+              <p>
+                {post.frontmatter.date}
+                {` `}
+                Cat: {post.frontmatter.cat || '✘'}
+                {` `}
+                Tags: {post.frontmatter.tags? post.frontmatter.tags.join(', ') : '✘'}
+              </p>
+            </span>
         </div>
         <MDXRenderer>{post.code.body}</MDXRenderer>
         <hr
@@ -97,6 +103,8 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        cat
+        tags
         date(formatString: "YYYY/MM/DD")
       }
     }
