@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from "../components/seo"
 import { css } from '@emotion/core'
+import { withPrefix } from 'gatsby'
 
 // basically HTML
 export default function AboutMe() {
@@ -12,6 +13,7 @@ export default function AboutMe() {
         border: 1px solid;
         margin: 0;
     `
+
     return (
         <Layout title={'About me'}>
             <SEO title={'About me'} />
@@ -22,8 +24,10 @@ export default function AboutMe() {
                 <p>I'm interested in programming especially software and Web.</p>
                 <p>And I like geeky/nerdly techs 😜.</p>
                 <h3>Programming</h3>
-                <p>Usually use JavaScript for any Web and NodeJS and some C++.</p>
-                <p>Also I'm interested in some languages so I use/learn other languages too.</p>
+                <p>Javascript, TypeScript</p>
+                <p>C++</p>
+                <p>Python</p>
+                <p>Rust</p>
                 <h3>Hobbies</h3>
                 <p>Car, Motorsports, <Link to={'/archive/kb'}>Mechanical Keyboards</Link> and some tech things.</p>
                 <h3>Links/Contacts</h3>
@@ -32,6 +36,9 @@ export default function AboutMe() {
                 <p>Email: click[at]clacking.net</p>
                 <h3>Archives</h3>
                 <p><Link to={'/archive/uni'}>IoT + home automation system Project at university...</Link></p>
+                <h3>Desktop</h3>
+                <img src={withPrefix('files/desktop.png')} alt={'Desktop'} />
+                <p>OS/Distro: Arch Linux (Antergos repository removed)</p>
             </div>
         </Layout>
     )

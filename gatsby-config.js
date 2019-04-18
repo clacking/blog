@@ -132,10 +132,14 @@ module.exports = {
             }
           }
         ],
-        /*plugins: [{
+        plugins: [{
           resolve: `gatsby-plugin-mdx-prismjs`,
-          noInlineHighlight: false
-        }]*/
+          options: {
+            inlineCodeMarker: null,
+            showLineNumbers: true,
+            noInlineHighlight: false
+          }
+        }]
       }  
     },
   ],
