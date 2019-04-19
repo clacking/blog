@@ -33,7 +33,8 @@ export default function Uni () {
             <p>realforce.</p>
             <h2>My Render</h2>
             <h3>HK CTKL (Compact TKL)</h3>
-            <img src={withPrefix('files/HWCTKL.png')} />
+            <p><img src={withPrefix('files/HWCTKL.png')} /></p>
+            <p><img src={withPrefix('files/HWCTKL2.png')} /></p>
             <p>Inspired by Dio80.</p>
             <p>This is just render, it doesn't have actual screw holes for mounting and plate is not good.</p>
         </Layout>
