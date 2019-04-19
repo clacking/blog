@@ -23,17 +23,23 @@ export default function AboutMe() {
                 <p>Current: University student.</p>
                 <p>I'm interested in programming especially software and Web.</p>
                 <p>And I like geeky/nerdly techs 😜.</p>
-                <h3>Programming</h3>
-                <p>Javascript, TypeScript</p>
-                <p>C++</p>
-                <p>Python</p>
-                <p>Rust</p>
-                <h3>Hobbies</h3>
-                <p>Car, Motorsports, <Link to={'/archive/kb'}>Mechanical Keyboards</Link> and some tech things.</p>
                 <h3>Links/Contacts</h3>
                 <p>Twitter: <a href="https://twitter.com/comfykb">@comfykb</a></p>
                 <p>Github: <a href="https://github.com/clacking">clacking</a></p>
                 <p>Email: click[at]clacking.net</p>
+                <h3>Programming</h3>
+                <h4>Language</h4>
+                <p>Javascript, TypeScript</p>
+                <p>C++</p>
+                <p>Rust</p>
+                <p>Java</p>
+                <p>PHP, Python, Ruby</p>
+                <h4>Framework, Libs, other</h4>
+                <p>Express.js, Nest.js, Laravel, RoR</p>
+                <p>React, Vue.js, Angular</p>
+                <p>MySQL (MariaDB), Postgresql, MongoDB</p>
+                <h3>Hobbies</h3>
+                <p>Car, Motorsports, <Link to={'/archive/kb'}>Mechanical Keyboards</Link> and some tech things.</p>
                 <h3>Archives</h3>
                 <p><Link to={'/archive/uni'}>IoT + home automation system Project at university...</Link></p>
                 <h3>Desktop</h3>
