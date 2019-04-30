@@ -39,7 +39,7 @@ export default function AboutMe() {
                 <p>React, Vue.js, Angular</p>
                 <p>MySQL (MariaDB), Postgresql, MongoDB</p>
                 <h3>Hobbies</h3>
-                <p>Car, Motorsports, <Link to={'/archive/kb'}>Mechanical Keyboards</Link> and some tech things.</p>
+                <p>Car, Motorsports, <Link to={'/archive/kb'}>Mechanical Keyboards</Link>, Sneakers and some tech things.</p>
                 <h3>Archives</h3>
                 <p><Link to={'/archive/uni'}>IoT + home automation system Project at university...</Link></p>
                 <h3>Desktop</h3>
