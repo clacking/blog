@@ -26,6 +26,7 @@ export default function AboutMe() {
                 <h3>Links/Contacts</h3>
                 <p>Twitter: <a href="https://twitter.com/comfykb">@comfykb</a></p>
                 <p>Github: <a href="https://github.com/clacking">clacking</a></p>
+                <p>Gitlab: <a href="https://gitlab.com/clacking">clacking</a></p>
                 <p>Email: click[at]clacking.net</p>
                 <h3>Programming</h3>
                 <h4>Language</h4>
@@ -45,6 +46,8 @@ export default function AboutMe() {
                 <h3>Desktop</h3>
                 <img src={withPrefix('files/desktop.png')} alt={'Desktop'} />
                 <p>OS/Distro: Arch Linux (Antergos repository removed)</p>
+                <img src={withPrefix('files/desktop2.png')} />
+                <p>The desktop is nothing special.</p>
             </div>
         </Layout>
     )
