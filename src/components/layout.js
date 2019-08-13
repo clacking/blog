@@ -15,6 +15,10 @@ class Layout extends React.Component {
         margin-bottom: ${rhythm(1.5)};
         margin-top: 0;
         font-size: 2em;
+        transform: rotate(0deg) scaleX(1.89) scaleY(0.9396) matrix3d(1.02935, 0.0273221, 0, 0.00148065, 0.265534, 0.814918, 0, -0.00212427, 0, 0, 1, 0, 26.8034, -17.8275, 0, 1);
+        top: 1em;
+        left: -3px;
+        position: relative;
     `
     const footerStyle = css`
         text-align: right;
