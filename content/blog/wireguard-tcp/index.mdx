@@ -1,0 +1,38 @@
+---
+title: WireGuardでUDP FWのバイパスをしたい
+date: "2019-08-05T16:04:55.585Z"
+update: "2019-08-05T16:04:55.585Z"
+cat: wip
+tags: [vpn, memo]
+lang: ja-JP5
+orig: yes
+---
+
+WireGuardを使いたいということもあります。
+
+そして色々ありTCPの特定のポート上でVPNを建てたいという場合があります。
+
+ただWireGuardはUDP上で動くため、TCPの特定のポートで動かすことができません。
+それを回避します。
+
+### TunSafeを利用する
+
+TunSafeはWireGuardのプロトコルを実装したVPNクライアントです。
+
+これにはTCP上で動かす[設定](https://tunsafe.com/user-guide/tcp)があります。
+
+ですがWireGuardは基本的に公式でリリースしているクライアント以外の利用は非推奨としている為、
+少し使用するのは考えたほうがいいかもしれません。(TunSafeは現在OSSの為一応信頼はできると思いますが)
+
+### UDPのパケットをTCP上で送信する
+
+[UDPTunnel](http://www.cs.columbia.edu/~lennox/udptunnel/) を用いてTCP上でWireGuardの通信をします。
+
+これらの方法ですが、WireGuardは独自のTCPの実装をしており、実質TCP上でTCPの動きをしてしまい再送地獄になったりし遅くなる場合があります。
+([WireGuard over TCP](https://github.com/TunSafe/TunSafe/blob/master/docs/WireGuard%20TCP.txt), [What is TCP Meltdown?](https://openvpn.net/faq/what-is-tcp-meltdown/))
+ですがコネクションの信頼性はあがります…
+
+[Udp2raw-tunnel](https://github.com/wangyu-/udp2raw-tunnel)を使うことでUDPのファイヤーウォールをバイパスすることもできます。
+
+パケットをTCP通信に見立ててやりとりします。TCPの再送をしないためTCP-TCPの問題を解決できます。
+
