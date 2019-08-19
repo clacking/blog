@@ -29,7 +29,7 @@ class BlogIndex extends React.Component {
         />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
-          const category = node.frontmatter.cat? ( <span alt="Category" css={cat}>{node.frontmatter.cat}</span> ) : null
+          const category = node.frontmatter.cat? ( <span alt="Category" className="box_text" css={cat}>{node.frontmatter.cat}</span> ) : null
           return (
             <div key={node.fields.slug}>
               <h3

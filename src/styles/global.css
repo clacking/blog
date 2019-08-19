@@ -7,8 +7,13 @@
         background-attachment: fixed;
         color: white;
     }
+
     a {
         color: #4CAF50;
         text-shadow: 0 0 3px #000;
+    }
+
+    .box_text {
+        color: #000;
     }
 }

@@ -29,8 +29,6 @@ export default function Uni () {
                 <li>Switch: Cherry MX Black (205g0 or 3202)</li>
                 <li>Keyset: GMK Camping</li>
             </ul>
-            <h3>Realforce 86u</h3>
-            <p>realforce.</p>
             <h2>My Render</h2>
             <h3>HK CTKL (Compact TKL)</h3>
             <p><img src={withPrefix('files/HWCTKL.png')} /></p>
