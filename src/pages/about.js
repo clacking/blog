@@ -27,13 +27,12 @@ export default function AboutMe() {
                 <p>Twitter: <a href="https://twitter.com/comfykb">@comfykb</a></p>
                 <p>Github: <a href="https://github.com/clacking">clacking</a></p>
                 <p>Gitlab: <a href="https://gitlab.com/clacking">clacking</a></p>
-                <p>Email: click[at]clacking.net</p>
+                <p>Email: click[at]clacking.net [<a href="https://keybase.io/clacking/pgp_keys.asc">PGP</a>]</p>
+                <p>Keybase: <a href="https://keybase.io/clacking">clacking</a></p>
                 <h3>Programming</h3>
                 <h4>Language</h4>
                 <p>Javascript, TypeScript</p>
-                <p>C++</p>
-                <p>Rust</p>
-                <p>Java</p>
+                <p>C++ Rust JAVA</p>
                 <p>PHP, Python, Ruby</p>
                 <h4>Framework, Libs, other</h4>
                 <p>Express.js, Nest.js, Laravel, RoR</p>
