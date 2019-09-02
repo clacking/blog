@@ -1,7 +1,7 @@
 ---
 title: WireGuardでUDP FWのバイパスをしたい
 date: "2019-08-05T16:04:55.585Z"
-update: "2019-08-05T16:04:55.585Z"
+update: "2019-09-02T08:10:50.582Z"
 cat: wip
 tags: [vpn, memo]
 lang: ja-JP5
@@ -36,3 +36,19 @@ TunSafeはWireGuardのプロトコルを実装したVPNクライアントです�
 
 パケットをTCP通信に見立ててやりとりします。TCPの再送をしないためTCP-TCPの問題を解決できます。
 
+[こちら](https://github.com/wangyu-/udp2raw-tunnel/releases)より実行ファイルを取得し
+(Win, Macの場合は[こっち](https://github.com/wangyu-/udp2raw-multiplatform/releases))
+以下で実行します。
+
+```bash
+[サーバー] # ./udp2raw_amd64 -s -l0.0.0.0:52 -r 127.0.0.1:[WGのポート]    -k "passwd" --raw-mode faketcp -a
+
+[クライアント] # ./udp2raw_amd64 -c -l0.0.0.0:3333  -r[サーバーのアドレス]:52  -k "passwd" --raw-mode faketcp
+
+```
+
+[いろいろ設定](https://github.com/wangyu-/udp2raw-tunnel/wiki/run-udp2raw-as-non-root)
+をしrootlessにしておくと良いです。
+
+WireGuardで接続する場合ホストEndpointをリモートのIPからローカルのアドレスにし、
+上記の場合はポートを`3333`にして接続します。
