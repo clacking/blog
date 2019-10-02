@@ -29,15 +29,15 @@ export default function AboutMe() {
                 <p>Gitlab: <a href="https://gitlab.com/clacking">clacking</a></p>
                 <p>Email: click[at]clacking.net [<a href="https://keybase.io/clacking/pgp_keys.asc">PGP</a>]</p>
                 <p>Keybase: <a href="https://keybase.io/clacking">clacking</a></p>
+                <p>Discord: clacking#1396 (Note: NOT Primary account, please contact on twitter first if you needed.)</p>
                 <h3>Programming</h3>
                 <h4>Language</h4>
                 <p>Javascript, TypeScript</p>
-                <p>C++ Rust JAVA</p>
+                <p>C++ Rust, JAVA</p>
                 <p>PHP, Python, Ruby</p>
                 <h4>Framework, Libs, other</h4>
                 <p>Express.js, Nest.js, Laravel, RoR</p>
                 <p>React, Vue.js, Angular</p>
-                <p>MySQL (MariaDB), Postgresql, MongoDB</p>
                 <h3>Hobbies</h3>
                 <p>Car, Motorsports, <Link to={'/archive/kb'}>Mechanical Keyboards</Link>, Sneakers and some tech things.</p>
                 <h3>Archives</h3>
