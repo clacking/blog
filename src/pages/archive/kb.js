@@ -14,7 +14,6 @@ export default function Uni () {
                 <li>Switch: Gateron Red (and some MX Black for repair)</li>
             </ul>
             <h3>TGR Jane v2</h3>
-            <p>Still waiting for shipping.</p>
             <ul>
                 <li>WKL</li>
                 <li>Color: Blue (Blue Gray)</li>
