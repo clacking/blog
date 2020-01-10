@@ -1,7 +1,7 @@
 ---
 title: ChromeのGlobal Media Controlsに情報を付ける
 date: "2020-01-10T08:38:01.880Z"
-update: "2020-01-10T08:38:01.880Z"
+update: "2020-01-10T08:57:01.880Z"
 tags: [chrome, media, video]
 lang: ja-JP
 orig: yes
@@ -27,7 +27,7 @@ navigator.mediaSession.metadata = new MediaMetadata({
 	title: 'Big Buck Bunny',
 	artist: 'https://peach.blender.org/',
 	artwork: [
-		{ src: 'https://sample.com/test.jpg', sizes: '256x256', type: 'image/png' },
+		{ src: 'https://sample.com/test.jpg', sizes: '256x256', type: 'image/jpg' },
 	]
 })
 </script>
@@ -47,10 +47,10 @@ navigator.mediaSession.setActionHandler('seekforward', () => document.querySelec
 
 ![test](./media2.png)
 
-これでYoutube見たいに情報を表示できます。もっと細かく情報やハンドラを付けたい場合はスマホ版の話ですが、
+これでYoutubeみたいに情報を表示できます。もっと細かく情報やハンドラを付けたい場合は大体スマホの話ですが、
 [Google](https://developers.google.com/web/updates/2017/02/media-session?hl=ja)の解説を読みましょう。
 
-私見たいにタブをバカみたいに開く人には良い機能かもしれませんが、邪魔だという人は `chrome://flags/#global-media-controls` から無効化できるみたいです。
+私みたいにタブをバカみたいに開く人には良い機能かもしれませんが、邪魔だという人は `chrome://flags/#global-media-controls` から無効化できるみたいです。
 
 Chrome OSでは前からあったみたいで、スマホのUIなどを最近デスクトップ版にも取り込むような動きみたいです。
 ただ最近それに伴ってか少し少しメディア周りが重くなった気がして辛い所があります...
