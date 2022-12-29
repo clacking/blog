@@ -9,7 +9,7 @@
     "@emotion/styled": "^10.0.10",
     "@mdx-js/tag": "^0.16.8",
     "disqus-react": "^1.0.5",
-    "gatsby": "^2.3.23",
+    "gatsby": "^5.3.3",
     "gatsby-image": "^2.0.39",
     "gatsby-mdx": "^0.3.6",
     "gatsby-plugin-emotion": "^4.0.6",
@@ -58,8 +58,8 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
-    "@mdx-js/loader": "^0.17.5",
+    "@mdx-js/loader": "^2.2.1",
     "@mdx-js/mdx": "^0.16.8",
-    "loader-utils": "^1.2.3"
+    "loader-utils": "^3.2.1"
   }
 }
